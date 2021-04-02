@@ -1,0 +1,6 @@
+research_year_variables = {
+	set_variable = {
+		which = research_year
+		value = 10
+	}
+}

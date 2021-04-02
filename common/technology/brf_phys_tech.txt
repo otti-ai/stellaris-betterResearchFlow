@@ -6,8 +6,7 @@ tech_self_aware_logic = {
 	prerequisites = {}
 	weight = 3000
 	modifier = {
-		num_tech_alternatives_add = 10
-		tradition_cost_num_xenos_mult = -0.11
+		num_tech_alternatives_add = research_year
 	}
 
 	weight_modifier = {
