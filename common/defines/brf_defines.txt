@@ -1,0 +1,4 @@
+	NGameplay = {
+		MAX_TRADE_DEAL_LENGTH_YEARS				= 300	# Maximum length of a trade deal in years.
+		TRADITION_COST_MULT_NUM_XENOS = 1.5 # 1
+	}

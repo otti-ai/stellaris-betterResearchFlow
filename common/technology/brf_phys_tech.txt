@@ -1,0 +1,65 @@
+tech_self_aware_logic = {
+	area = physics
+	tier = 1
+	cost = 10
+	category = { computing }
+	prerequisites = {}
+	weight = 3000
+	modifier = {
+		num_tech_alternatives_add = 10
+		tradition_cost_num_xenos_mult = -0.11
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_computing"
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.5
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_computing"
+			}
+		}
+	}
+}
+
+#Automated Exploration Protocols
+tech_combat_computers_autonomous = {
+	area = physics
+	tier = 1
+	cost = @tier1cost2
+	category = { computing }
+	weight = 3000
+	prerequisites = {}
+	modifier = {
+		science_ship_survey_speed = 0.25
+	}
+
+	weight_modifier = {
+		modifier = {
+			factor = 1
+			NOR = {
+				has_technology = tech_self_aware_logic
+				years_passed > 100
+			}
+		}
+	}
+
+	ai_weight = {
+		modifier = {
+			factor = 1.25
+			research_leader = {
+				area = physics
+				has_trait = "leader_trait_expertise_computing"
+			}
+		}
+	}
+}

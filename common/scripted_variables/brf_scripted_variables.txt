@@ -1,0 +1,3 @@
+# TECH Factors
+@year100 = 100
+@year101 = 101
